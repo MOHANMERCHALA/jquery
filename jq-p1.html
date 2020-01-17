@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQUERY PRACTICE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            var d=new Date();
+            var h=d.getHours();
+            $(document).ready(function(){
+  $("#s").click(function(){
+      if(h>12){
+      alert("Good afternoon "+$("#t").val());
+      $("#s").prop('value', h);
+      }
+      else{
+        alert("Good morning "+$("#t").val());
+      }
+    });
+});
+</script>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter Your name" id="t"><br>
+        <input type="submit" name="submit" value="submit" id="s">
+        
+        
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JAVASCRIPT-1
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script>
+        $(function(){
+            var c=1;
+            var n=$("<li></li>").text("the count is"+c);
+            $("#f").after(n);
+            c++;
+    
+});
+    </script>
+    </head>
+    <body>
+        <p>
+            <a href="#" id="a">more</a>
+        </p>
+        <ul id="th">
+            <li>first item</li>
+        </ul>
+        <script type="text/javascript">
+            c=1;
+            console.log(document.getElementById('th'))
+            function add(){
+           var x=document.createElement('li');
+            x.className="list-item";
+            x.innerHTML="the counter is"+c;
+            document.getElementById('th').appendChild(x);
+            c++;
+            }
+        </script>
+
+    </body>
+    </html>
